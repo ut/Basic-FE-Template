@@ -1,9 +1,334 @@
 @charset 'utf-8';
-@import url(reset.css);
-@import url(fancybox.css);
 
 /* ----------------------------------------------------- Comment */
 
 .js div { } /* apply only on JavaScript enabled browsers */
 .ie7 div { } /* apply only on Internet Explorer 7 and below */
 .ie6 div { } /* apply only on Internet Explorer 6 and below */
+
+
+/* ----------------------------------------------------- Basics */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #EEE;
+	margin: 0; padding: 0;
+}
+
+.skip, .hidden { display: none; }
+.clear, .clearer { clear: both; }
+
+h1 { font-size: 200%; }
+h2 { font-size: 200%; }
+h3 { font-size: 160%; }
+h4 { font-size: 160%; }
+h5 { font-size: 160%; }
+
+h2,h3 {
+  margin: 0 0 10px 0;
+}
+h4,h5,h6 {
+  margin: 30px 0 10px 0;
+}
+p, td, ul, blockquote { 
+  line-height: 15pt;
+}
+blockquote {
+  font-style: italic;
+  margin: 0 15px;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid silver;
+  margin: 25px 0;
+}
+#main ul {
+  list-style-type: disc;
+  padding: 0 15px;
+}
+
+a { color: #666; padding: 1px 2px; }
+
+a:hover, a.current{ 
+    color: white; background-color: #666;
+    text-decoration: none;
+}
+
+a:active, a:focus { color: #CC0000; }
+
+#main a:hover, #main a.current:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------- Structure */
+#page {
+	width: 940px;
+	margin: 10px auto;
+	padding: 0 20px 10px 20px;
+	border: 1px solid silver;	
+	background-color: white;
+}
+#page_margins {
+	
+}
+/* ----------------------------------------------------- Header */
+#header {
+	border: 1px solid silver;
+	padding: 15px;	
+	margin: 10px 0 0 0;
+        clear: both;
+}
+
+
+
+
+#logo {
+  float: left;
+  padding: 0 20px 0 0;
+}
+#title {
+  float: left;
+}
+#title h1 {
+  font-size: 30pt;
+  padding: 10px 0;
+}
+#title h1 a { text-decoration: none; background: none; color: black; }
+
+/* ----------------------------------------------------- Nav */
+#metas {
+  float: right;
+  font-size: 8pt;
+  margin: 0 0 0 0;
+}
+#nav {
+  border-bottom: 1px solid silver;
+  padding: 10px 10px 0 10px;
+  margin: 5px;
+  clear: both;
+}
+#nav_main, #menu {
+  margin: 0 2px;	
+}
+#nav_sub {
+	
+}
+
+/* ----------------------------------------------------- Content */
+#main {
+	min-height: 400px;	
+	padding: 10px 0;
+	clear: both;
+}
+#main p, li {
+   margin: 0 10px 10px 0; 
+}
+#content_metas {
+	
+}
+#content {
+	min-height: 400px;	
+}
+.column {
+}
+
+#col1 {
+	float: left;
+}
+#col2 {
+	float: left;		
+	min-height: 400px;	
+}
+#footer {
+	border-top: 1px solid silver;
+	padding: 10px 0 0 15px;
+        font-size: 8pt;
+}
+/* ----------------------------------------------------- 1col */
+#main #content {
+  margin: 0 15px;  
+}
+
+
+/* ----------------------------------------------------- 2col */
+#main.twocol #col1 {
+   width: 48%;
+	border-right: 1px solid silver;		
+	min-height: 400px;	
+}
+#main.twocol #col2 {
+   width: 49%;
+   padding-left: 20px;
+} 
+/* ----------------------------------------------------- 3col */
+#main.threecol #content {
+  margin: 0;  
+}
+#main.threecol #col1 {
+	width: 30%;
+   padding-left: 10px;	
+}
+#main.threecol #col2 {
+	width: 32%;	
+   padding: 0 10px;	
+	border-left: 1px solid silver;
+ 
+}
+#main.threecol #col3 {
+	float: left;
+	width: 32%;
+	padding-left: 10px;
+	min-height: 400px;
+	border-left: 1px solid silver;	
+}
+/* ----------------------------------------------------- Metas*/
+#metas li {
+   margin: 0;
+}
+
+
+/* ----------------------------------------------------- Header */
+
+
+/* ----------------------------------------------------- Nav */
+.nav li { display: inline; padding: 3px 10px 3px 0; }
+
+/* ----------------------------------------------------- Nav@Main*/
+#main ul.nav {
+   display: block;
+   padding: 0;
+   list-style-type: none;
+}
+#main ul.nav li {
+  display: block !important;
+  float: none;
+  width: auto;
+}
+#main ul.nav li a {
+  display: block !important;
+}
+#main ul.nav li a:hover, 
+#main #main ul.nav li a.current:hover {
+    color: white; background-color: #666;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------ Table */
+table {
+  margin: 10px 0;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 12px; }
+
+table table {
+  margin: 0;
+}
+
+td, th {
+  margin: 0;
+  padding: 10px 3px 10px 2px;
+  border: 0px solid black;
+  border-bottom: 1px solid silver;
+  vertical-align: top;
+ }
+
+th {
+  font-weight: normal;
+  background-color: white;
+ }
+
+
+tr {
+  background-color: white;
+}
+
+tr.row0:hover {
+    background-color: #c4cfdb; }
+
+tr.row1 {
+  background-color: #dedede; }
+tr.row1:hover {
+  background-color: #c4cfdb; }
+
+tr tr {
+   background-color: transparent;
+}
+td.img {
+  text-align: center;
+}
+td.comment {
+  color: grey;
+}
+td tt {
+width: 300px;
+white-space: pre-line;
+overflow: scroll;
+}
+/* ------------------------------------------------------ Form */
+/* .online for label & input in one line */
+/* .twoline for label & input in two lines */
+form label  {
+  display: block;
+  margin: 0; padding: 0;
+}
+form.oneline label {
+  display: block;
+  float: left;
+  width: 120px;
+}
+form.twoline label {
+  display: block;
+}
+
+input,textarea {
+  font-size: 110%;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid grey;
+  padding: 2px;
+  margin: 0 0 0 0;
+  color: black; }
+input:focus, textarea:focus {
+    background-color: #FFFACD;
+    color: black; }
+input:hover, textarea:hover {
+    background-color: #FFFACD;
+    color: black; }
+
+input[type=submit], input[type=button] {
+    font-size: 90%;
+    padding: 3px 10px;
+   -moz-border-radius: 3px;
+   background-image:URL(../img/button_background.gif);
+}
+form.oneline input[type=submit], form.oneline input[type=button] {
+    padding: 3px 12px;
+    margin: 0 0 0 120px;
+}
+input[type=submit]:hover, input[type=button]:hover {
+   cursor: pointer;
+   background-color: #FFF69F;
+   background-image:URL(/images/submit_background_act.gif);
+}
+
+a.button,  a.button_large {
+ border: 1px solid grey;
+ padding: 2px 10px;
+ color: black;
+ text-decoration: none;
+ background-image:URL(../img/button_background.gif);
+ -moz-border-radius:3px;
+}
+a.button:hover, a.button:active {
+ background-image:URL(../img/button_background_act.gif);
+ color: black;
+}
+a.button.disabled {
+ color: grey;
+ cursor: wait;
+}
+/* ------------------------------------------------------ Form */
+
+
