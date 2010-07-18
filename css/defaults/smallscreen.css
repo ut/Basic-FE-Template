@@ -1,0 +1,71 @@
+@media screen and (max-width: 550px) {
+
+/* ----------------------------------------------------- Basics */
+   body { font-size: 75%; }
+/* ----------------------------------------------------- Structure */	
+  #page {
+     width: 425px;
+     margin: 5px auto;
+     padding: 10px 0;			
+  }
+  #header {
+    border: none;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+  }
+  #nav, #menu, #metas, nav.li {
+    margin: 0 15px !Important;
+    padding: 0 0 !Important;
+    border: none !Important;
+    font-size: 100%;
+    float: none !Important;
+  }
+  #metas { padding: 0 0 5px 0; }
+  #main, #content, #footer{
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none;
+    float: none !Important;
+    min-height: none !important;
+  }
+  #col, #col1, #col2, #col3 {
+		float: none !important;
+		width: auto !Important;
+		padding: 20px 0 0 15px !important;
+		margin: 0 0 10px 0 !important;
+		border-left: none !important;
+		border-right: none !important;
+		border-top: 1px solid silver;
+		min-height: none;
+	}
+  #footer {
+    border-top: 1px solid silver;
+    margin: 20px 0 0 0;
+    padding: 10px 0 0 10px !important;
+   }
+/* ----------------------------------------------------- Nav */   
+  p.hidden{
+    display: block;
+    padding: 5px 0 !important; margin: 0;
+  }
+	.nav li, #nav p, #metas p {
+		float: none;
+    margin: 0;
+		padding: 0;
+	}
+  .nav li .spacer {
+    display: none;
+  }
+  .nav li a {
+     display: block;
+     padding: 3px 0;
+     border-top: 1px solid silver;
+   }
+}
+
+@media screen and (max-width: 800px) {
+	body {  }}
+
+@media screen and (min-width: 1024px) {
+	body {  }}
+	

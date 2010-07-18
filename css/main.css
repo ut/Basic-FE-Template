@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+	/* CSS for empty_app */
+
+	/* style defaults */
+	/* reset browser css */
+	@import url(defaults/reset.css);
+	/* style for fancybox */
+	@import url(defaults/fancybox.css);
+	/* styles for rails flash and errors */
+	@import url(defaults/rails.css);
+	/* all styles for layout */
+	@import url(defaults/screen.css);
+
+/* modifiy your css here */
+@import url(custom.css);
+
+	/* style your site for small screens */
+	@import url(defaults/smallscreen.css);
+
+	/* stylesheet for printing */
+	@import url(print.css);
+
+

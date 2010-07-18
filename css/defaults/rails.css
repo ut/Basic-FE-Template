@@ -1,0 +1,87 @@
+@charset 'utf-8';
+
+/* ------------------------------ */
+/* rails status, flashes and errors */
+/* ------------------------------ */
+
+/* ------------------------------------*/
+#login {
+ margin: 0 0 0 0;
+ padding: 20px;
+ width: 50%;
+ border: 1px solid silver;
+}
+#login input {
+  margin: 5px 0;
+}
+
+
+div#status {
+  margin: 0;
+
+}
+div#status p.notice {
+  margin:0;
+}
+
+p.notice {
+  display: block;
+  width: 50%;
+  overflow: none;
+  padding: 10px 20px !important;
+  color: black;
+  text-align: center;
+  border: 1px solid green;
+  background-color: #D5F9D5;
+  margin-bottom: 10px !important;
+}
+
+span.error {
+  color: #BB0000;
+  font-weight: bold;
+  padding: 1px 5px;
+  background-color: #EED6D6;
+  border: 1px solid #BB0000;
+}
+
+p.error span.error {
+ border: 0px solid #BB0000;
+}
+
+p.error, blockquote.error, div.errorExplanation {
+  width: 50%;
+  overflow: none;
+  padding: 10px 20px !important;
+  margin: 0 0 10px 0;
+  color: black;
+  text-align: center;
+  background-color: #EED6D6;
+  border: 1px solid #BB0000;
+}
+blockquote.error {
+  padding: 10px;
+  margin: 0;
+  width: 75%;
+  overflow: none;
+  color: #BB0000;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #BB0000;
+  font-family: Courier, 'Courier New', monospace;
+}
+
+div.errorExplanation {
+  width: 90%;
+  overflow: none;
+  padding: 10px 20px !important;
+  margin: 0 0 10px 0;
+  color: black;
+  text-align: center;
+  background-color: #EED6D6;
+  border: 1px solid #BB0000;
+}
+
+div.errorExplanation h2 {
+  font-size: 15px;
+
+}

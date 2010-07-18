@@ -1,7 +1,8 @@
-HTML/CSS/JS-Kickstart
-(small framework for quickly getting started with your web frontend development)
+Basic FE Templates
 
-Version 1.4 | Release: 2010-07-13
-by Gerrit van Aaken (http://praegnanz.de)
+This basic template comes with 1col, 2col and 3col layout, css styles including small screens and rails styles, basic jquery lib + fancybox.
 
-No rights reserved.
+It is based on 
+* Kickstart http://github.com/gerritvanaaken/Kickstart
+* CSS Reset http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+* JQuery, Fancybox
