@@ -3,12 +3,16 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Basic w/2 Columns</title>
+  <!-- Basic-FE-Template -->
+  <!-- by ulf.treger <ulf.treger@googlemail.com -->
+  <!-- http://github.com/ut/Basic-FE-Template -->
   <!-- CSS based on kickstarter -->
   <link href="css/main.css" rel="stylesheet" media="screen" type="text/css" />
   <link href="css/print.css" rel="stylesheet" media="print" type="text/css" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta name="robots" content="index, follow" />
+  <script src="js/html5.js"></script>
   <script>document.documentElement.className += " js";</script>
 </head>
 
@@ -19,31 +23,31 @@
 
   <div id="page">
     <div id="page_margins">
-      <div id="metas">
+      <nav id="metas">
           <p class="hidden">Metas:</p>
           <ul class="nav">
             <li><a href="">Meta 1</a></li>
             <li><a href="#">Meta 2</a></li>
             <li><a href="#">Meta 3</a></li>
           </ul>      
-      </div>
-      <div id="header">
+      </nav>
+      <header>
           HEADER
-      </div>
-      <div id="nav">
+      </header>
+      <nav id="nav">
         <div id="nav_main">
-          <p class="hidden">Menu:</a>
+          <p class="hidden">Menu:</p>
           <ul class="nav">
             <li><a href="#">Menu 1</a></li>
             <li><a href="#">Menu 2</a></li>
             <li><a href="#">Menu 3</a></li>
           </ul>
         </div>
-        <div class="clearer" />
-      </div>
+        <div class="clearer"></div>
+      </nav>
       <div id="main" class="twocol">
         <div id="content">
-          <div id="col1" class="column">
+          <section id="col1" class="column">
             <h2>Column One</h2>
             <p>Sed diam nonumy eirmod <a href="#1">tempor invidunt ut labore</a> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>   
               <p>
@@ -68,8 +72,8 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
             </p>
             
             </form>
-          </div>
-          <div id="col2" class="column">
+          </section>
+          <section id="col2" class="column">
             <h2>Column Two</h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             <h3>Subtitle</h3>
@@ -82,14 +86,14 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
             <blockquote>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum
             </blockquote>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="clearer" />
+          </section>
+          <div class="clearer"></div>
         </div>
-        <div class="clearer" />
+        <div class="clearer"></div>
       </div>
-      <div id="footer">
+      <footer>
          <p>Site | 2010</p>
-      </div>
+      </footer>
     </div>
   </div>
 

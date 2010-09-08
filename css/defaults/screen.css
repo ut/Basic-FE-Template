@@ -74,7 +74,7 @@ a:active, a:focus { color: #CC0000; }
 	
 }
 /* ----------------------------------------------------- Header */
-#header {
+header {
 	border: 1px solid silver;
 	padding: 15px;	
 	margin: 10px 0 0 0;
@@ -101,11 +101,11 @@ a:active, a:focus { color: #CC0000; }
 #metas {
   float: right;
   font-size: 8pt;
-  margin: 0 0 0 0;
+  margin: 5px 0 5px 0;
 }
 #nav {
   border-bottom: 1px solid silver;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 15px 10px;
   margin: 5px;
   clear: both;
 }
@@ -141,7 +141,7 @@ a:active, a:focus { color: #CC0000; }
 	float: left;		
 	min-height: 400px;	
 }
-#footer {
+footer {
 	border-top: 1px solid silver;
 	padding: 10px 0 0 15px;
         font-size: 8pt;
