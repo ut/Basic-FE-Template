@@ -61,6 +61,22 @@ a:active, a:focus { color: #CC0000; }
     background-color: transparent;
     text-decoration: underline;
 }
+/* ------------------------------------------------ Layout Helpers */
+
+.right {
+  float:right;
+}
+div.col1, fieldset.col1 {
+  float: left;
+  width: 46%;
+}
+
+div.col2, fieldset.col2 {
+  float: left;
+  width: 46%;
+  margin-left: 40px;
+}
+
 
 /* ----------------------------------------------------- Structure */
 #page {
@@ -238,6 +254,7 @@ td, th {
 th {
   font-weight: normal;
   background-color: white;
+  color: #777;  
  }
 
 
@@ -252,6 +269,9 @@ tr.row1 {
   background-color: #dedede; }
 tr.row1:hover {
   background-color: #c4cfdb; }
+tr.summary {
+  font-size: 160%;
+}
 
 tr tr {
    background-color: transparent;
@@ -259,17 +279,52 @@ tr tr {
 td.img {
   text-align: center;
 }
+th.number, td.number {
+  text-align: right;
+}
 td.comment {
   color: grey;
 }
+
 td tt {
 width: 300px;
 white-space: pre-line;
 overflow: scroll;
 }
+
+table.small {
+  margin: 0 0 10px 0;
+  border-spacing: 0;
+  width: auto;
+  font-size: 12px; 
+}
+table.small td, table.small th {
+  margin: 0;
+  padding: 10px 15px 10px 10px;
+  border: 0px solid black;
+  vertical-align: top;
+ }
+
+
+
 /* ------------------------------------------------------ Form */
 /* .online for label & input in one line */
 /* .twoline for label & input in two lines */
+
+form fieldset {
+
+}
+form fieldset legend {
+  line-height: 15pt;
+  width: 100%;
+  margin: 0 0 12px 0;
+  border-bottom: 1px solid grey;
+}
+form div.field { 
+  line-height: 15pt;
+  margin: 0 0 12px 0;
+}
+
 form label  {
   display: block;
   margin: 0; padding: 0;
@@ -281,6 +336,13 @@ form.oneline label {
 }
 form.twoline label {
   display: block;
+}
+label.inline {
+  display: inline;
+}
+span.info {
+  color: #777;
+  font-size: 80%;
 }
 
 input,textarea {
@@ -295,9 +357,10 @@ input:focus, textarea:focus {
     color: black; }
 input:hover, textarea:hover {
     background-color: #FFFACD;
-    color: black; }
+    color: black; 
+  }
 
-input[type=submit], input[type=button] {
+input[type=submit], input[type=reset], input[type=button] {
     font-size: 90%;
     padding: 3px 10px;
    -moz-border-radius: 3px;
@@ -310,7 +373,7 @@ form.oneline input[type=submit], form.oneline input[type=button] {
 input[type=submit]:hover, input[type=button]:hover {
    cursor: pointer;
    background-color: #FFF69F;
-   background-image:URL(/images/submit_background_act.gif);
+   background-image:URL(../img/submit_background_act.gif);
 }
 
 a.button,  a.button_large {
@@ -329,6 +392,6 @@ a.button.disabled {
  color: grey;
  cursor: wait;
 }
-/* ------------------------------------------------------ Form */
+/* ------------------------------------------------------ Etc */
 
 
