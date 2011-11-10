@@ -6,4 +6,6 @@ function dom_init() {
     'speedOut' : 300
   });
   
+  $('footer p').append(" | Javascript enabled");
+  
 }
