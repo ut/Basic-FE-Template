@@ -18,7 +18,8 @@ body {
 .skip, .hidden { display: none; }
 .clear, .clearer { clear: both; }
 
-h1 { font-size: 200%; }
+
+h1 { font-size: 250%; }
 h2 { font-size: 200%; }
 h3 { font-size: 160%; }
 h4 { font-size: 160%; }
@@ -37,6 +38,10 @@ blockquote {
   font-style: italic;
   margin: 0 15px;
 }
+code {
+  font-family: "Courier New",courier, monospaced;
+}
+
 hr {
   border: none;
   border-bottom: 1px solid silver;
@@ -62,10 +67,11 @@ a:active, a:focus { color: #CC0000; }
     text-decoration: underline;
 }
 /* ------------------------------------------------ Layout Helpers */
+.left { float: left; }
+.right { float: right; }
+.center { text-align: center;}
+.small {  font-size: 86%; }
 
-.right {
-  float:right;
-}
 div.col1, fieldset.col1 {
   float: left;
   width: 46%;
@@ -338,15 +344,18 @@ form.twoline label {
   display: block;
 }
 label.inline {
-  display: inline;
+  display: inline; padding-right: 5px;
 }
-span.info {
+span.info, span.help, p.help, p.warn {
   color: #777;
   font-size: 80%;
 }
+span.warn, p.warn {
+  color: red;
+}
 
 input,textarea {
-  font-size: 110%;
+  font-size: 130%;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid grey;
   padding: 2px;
@@ -363,26 +372,28 @@ input:hover, textarea:hover {
 input[type=submit], input[type=reset], input[type=button] {
     font-size: 90%;
     padding: 3px 10px;
-   -moz-border-radius: 3px;
-   background-image:URL(../img/button_background.gif);
+    border-radius:3px;
+    -moz-border-radius: 3px;
+    background-image:URL(../img/button_background.gif);
 }
-form.oneline input[type=submit], form.oneline input[type=button] {
+form.oneline input[type=submit], form.oneline input[type=reset], form.oneline input[type=button] {
     padding: 3px 12px;
     margin: 0 0 0 120px;
 }
-input[type=submit]:hover, input[type=button]:hover {
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
    cursor: pointer;
    background-color: #FFF69F;
    background-image:URL(../img/submit_background_act.gif);
 }
 
 a.button,  a.button_large {
- border: 1px solid grey;
- padding: 2px 10px;
- color: black;
- text-decoration: none;
- background-image:URL(../img/button_background.gif);
- -moz-border-radius:3px;
+  border: 1px solid grey;
+  padding: 3px 10px 4px 10px;
+  color: black;
+  text-decoration: none;
+  background-image:URL(../img/button_background.gif);
+  border-radius:3px;
+  -moz-border-radius:3px;
 }
 a.button:hover, a.button:active {
  background-image:URL(../img/button_background_act.gif);
@@ -392,6 +403,32 @@ a.button.disabled {
  color: grey;
  cursor: wait;
 }
-/* ------------------------------------------------------ Etc */
+img.button_delete {
+  position: relative;
+  top: 8px;
+  border: 1px solid grey;
+  padding: 3px 5px 3px 5px;
+  color: black;
+  text-decoration: none;
+  background-image:URL(asset-path("button_background.gif", image));
+  border-radius:3px;
+  -moz-border-radius:3px;
+}
+td img.button_delete {
+  position: relative;
+  top: 0px;
+  margin-top: -1px;
+  border: 1px solid grey;
+  padding: 2px 8px 1px 4px;
+  color: black;
+  text-decoration: none;
+  background-image:URL(asset-path("button_background.gif", image));
+  border-radius:3px;
+  -moz-border-radius:3px;
+}
+/* ------------------------------------------------------ Form */
+img.ui-datepicker-trigger {
+   margin: 0 0 0 5px;
+}
 
 
